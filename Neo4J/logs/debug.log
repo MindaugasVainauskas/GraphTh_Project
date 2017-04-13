@@ -345,3 +345,67 @@ Storage files: (filename : modification date - size)
 2017-04-13 11:14:29.483+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2017-04-13 11:14:36.488+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
 2017-04-13 11:43:32.100+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 581ms.
+2017-04-13 15:34:21.754+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Starting check pointing...
+2017-04-13 15:34:21.754+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Starting store flush...
+2017-04-13 15:34:21.981+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 6 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a].
+2017-04-13 15:34:21.997+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 6 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a].
+2017-04-13 15:34:22.313+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Store flush completed
+2017-04-13 15:34:22.328+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Starting appending check point entry into the tx log...
+2017-04-13 15:34:22.344+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Appending check point entry into the tx log completed
+2017-04-13 15:34:22.344+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [6]:  Check pointing completed
+2017-04-13 15:34:22.344+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-04-13 15:34:22.344+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-04-13 15:36:49.373+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes'as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+2017-04-13 15:36:49.390+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes'as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+2017-04-13 15:39:22.512+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Starting check pointing...
+2017-04-13 15:39:22.512+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Starting store flush...
+2017-04-13 15:39:22.632+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 10 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b].
+2017-04-13 15:39:22.648+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 10 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b].
+2017-04-13 15:39:23.129+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Store flush completed
+2017-04-13 15:39:23.145+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Starting appending check point entry into the tx log...
+2017-04-13 15:39:23.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Appending check point entry into the tx log completed
+2017-04-13 15:39:23.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [10]:  Check pointing completed
+2017-04-13 15:39:23.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-04-13 15:39:23.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-04-13 16:03:14.300+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Starting check pointing...
+2017-04-13 16:03:14.302+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Starting store flush...
+2017-04-13 16:03:14.305+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 12 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a].
+2017-04-13 16:03:14.321+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 12 to [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.b], from [C:\Users\Mindaugas\Documents\GMIT 2016-2017\Projects16-17\Graph theory project\GraphTh_Project\Neo4J\neostore.counts.db.a].
+2017-04-13 16:03:14.805+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Store flush completed
+2017-04-13 16:03:14.805+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Starting appending check point entry into the tx log...
+2017-04-13 16:03:14.821+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Appending check point entry into the tx log completed
+2017-04-13 16:03:14.821+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [12]:  Check pointing completed
+2017-04-13 16:03:14.821+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-04-13 16:03:14.821+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-04-13 16:06:03.862+0000 INFO  [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2017-04-13 16:06:03.862+0000 INFO  [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now unavailable
+2017-04-13 16:06:03.877+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Starting check pointing...
+2017-04-13 16:06:03.877+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Starting store flush...
+2017-04-13 16:06:03.900+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Store flush completed
+2017-04-13 16:06:03.900+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Starting appending check point entry into the tx log...
+2017-04-13 16:06:03.916+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Appending check point entry into the tx log completed
+2017-04-13 16:06:03.916+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [12]:  Check pointing completed
+2017-04-13 16:06:03.931+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-04-13 16:06:03.931+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-04-13 16:06:05.338+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-04-13 16:06:05.338+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
