@@ -1369,3 +1369,5 @@ RETURN r;
 2017-04-16 17:28:48.268+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [74]:  Check pointing completed
 2017-04-16 17:28:48.268+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2017-04-16 17:28:48.268+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-04-16 18:06:01.710+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN Match ()-[r:ASSIGNED_TO]->() delete r;
+2017-04-16 18:06:01.715+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Match ()-[r:ASSIGNED_TO]->() delete r;
